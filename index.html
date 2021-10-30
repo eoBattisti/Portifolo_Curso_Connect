@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/6039d60b32.js" crossorigin="anonymous"></script>
+    <title>Nicolas Battisti</title>
+</head>
+<body>
+    <header>
+        <div class="tab-container">
+            <button class="nav-buttons" onclick="openTab(event, 'About')"><img src="./images/gamer.png">Sobre Mim</button>
+            <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/ddara" title="dDara">dDara</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+        </div>
+        <div class="tab-container">
+            <button class="nav-buttons" onclick="openTab(event, 'AboutBPK')"><img src="./images/castle.png" alt="" srcset=""> Sobre o BPK</button>
+            <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+        </div>
+        <div class="tab-container">
+            <button id="btnMT" class="nav-buttons" onclick="openTab(event, 'AboutMT')"> <img src="./images/books.png" alt="" srcset=""> Matérias</button>
+            <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+        </div>
+        
+        
+    </header>
+    <div id="AboutMT" class="sub-menu">
+        <div class="tab-container">
+            <button class="nav-buttons" onclick="openMenuTab(event, 'AboutDB')">
+                <img src="" alt=""> Banco de dados
+            </button>
+        </div>
+        <div class="tab-container">
+            <button class="nav-buttons" onclick="openMenuTab(event, 'AboutES')">
+                <img src="" alt=""> Engenharia de Software
+            </button>
+        </div>
+        <div class="tab-container">
+            <button class="nav-buttons" onclick="openMenuTab(event, 'AboutED')">
+                <img src="" alt=""> Estrutura de Dados
+            </button>
+        </div>
+        <div class="tab-container" >
+            <button class="nav-buttons" onclick="openMenuTab(event, 'AboutWeb')">
+                <img src="" alt=""> Front-End
+            </button>
+        </div>
+        <div class="tab-container">
+            <button class="nav-buttons" onclick="openMenuTab(event, 'AboutLog')">
+                <img src="" alt=""> Lógica e Algoritmo
+            </button>
+        </div>
+        <div class="tab-container">
+            <button class="nav-buttons" onclick="openMenuTab(event, 'AboutAgile')">
+                <img src="" alt=""> Metodologia ágeis
+            </button>
+        </div>
+        <div class="tab-container">
+            <button class="nav-buttons" onclick="openMenuTab(event, 'AboutCoach')">
+                <img src="" alt=""> Softskills
+            </button>
+        </div>
+    </div>
+    <main>
+        <div id="About" class="tabcontent active">
+            <div class="container">
+                <div class="self-img"></div>
+                <h3 style="margin-top: 8px;">Nicolas Battisti</h3>
+                <p class="subtitle" style="margin-top: 6px;"><i class="fas fa-map-pin"></i> Toledo, Paraná, Brasil</p>
+                <div class="icon-container">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/eoBattisti" target="__blank">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" target="_blank">
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h4 style="margin-bottom: 8px;">Sobre mim</h4>
+                    <p class="tbody">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum itaque nisi ullam at, similique voluptate architecto ipsa animi facilis, quis ratione ipsum distinctio explicabo laudantium. Cum vero doloribus hic soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, ex ab earum id animi eaque sunt. Laboriosam officia cumque voluptas nemo, consequatur saepe architecto suscipit aliquid odio minima. Odio, reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum sed itaque, optio nobis ad ex alias ullam cupiditate laborum nesciunt fugiat ducimus placeat recusandae culpa deleniti sapiente aut aliquid? Eaque.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum itaque nisi ullam at, similique voluptate architecto ipsa animi facilis, quis ratione ipsum distinctio explicabo laudantium. Cum vero doloribus hic soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, ex ab earum id animi eaque sunt. Laboriosam officia cumque voluptas nemo, consequatur saepe architecto suscipit aliquid odio minima. Odio, reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum sed itaque, optio nobis ad ex alias ullam cupiditate laborum nesciunt fugiat ducimus placeat recusandae culpa deleniti sapiente aut aliquid? Eaque.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum itaque nisi ullam at, similique voluptate architecto ipsa animi facilis, quis ratione ipsum distinctio explicabo laudantium. Cum vero doloribus hic soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, ex ab earum id animi eaque sunt. Laboriosam officia cumque voluptas nemo, consequatur saepe architecto suscipit aliquid odio minima. Odio, reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum sed itaque, optio nobis ad ex alias ullam cupiditate laborum nesciunt fugiat ducimus placeat recusandae culpa deleniti sapiente aut aliquid? Eaque.
+                    </p>
+                    <h4>Hobbies</h4>
+                    <div class="card-container">
+                        <div class="card">
+                            <i class="fas fa-chess-king fa-2x"></i>
+                            <h6>Title</h6>
+                            <p class="tbody-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae odio quasi, aliquid excepturi quaerat pariatur alias esse magni nisi molestias accusamus ab maiores aut ex magnam tempora facilis! Est.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-chess-king  fa-2x"></i>
+                            <h6>Title</h6>
+                            <p class="tbody-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae odio quasi, aliquid excepturi quaerat pariatur alias esse magni nisi molestias accusamus ab maiores aut ex magnam tempora facilis! Est.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-chess-king fa-2x"></i>
+                            <h6>Title</h6>
+                            <p class="tbody-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae odio quasi, aliquid excepturi quaerat pariatur alias esse magni nisi molestias accusamus ab maiores aut ex magnam tempora facilis! Est.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-chess-king fa-2x"></i>
+                            <h6>Title</h6>
+                            <p class="tbody-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae odio quasi, aliquid excepturi quaerat pariatur alias esse magni nisi molestias accusamus ab maiores aut ex magnam tempora facilis! Est.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+        </div>
+        <div id="AboutBPK" class="tabcontent">
+            <div class="container">
+                <div class="bpk-logo"></div>
+                <div class="about-text">
+                    <h4 style="margin-top: 16px;">Sobre o Biopark</h4>
+                    <p class="tbody" style="margin-top: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, explicabo. Aspernatur vel deserunt velit? Vel laboriosam vitae temporibus exercitationem quod similique qui expedita? Veniam recusandae animi repudiandae aliquid, saepe officiis!]
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsum excepturi deleniti autem quis repellat, perferendis soluta, accusantium delectus voluptates in temporibus ab quo quisquam iure sequi vel? Quia, deserunt.
+                    </p>
+                    <div class="card-container extended">
+                        <div class="card">
+                            <i class="fas fa-chess-king fa-2x"></i>
+                            <h6>Title</h6>
+                            <p class="tbody-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae odio quasi, aliquid excepturi quaerat pariatur alias esse magni nisi molestias accusamus ab maiores aut ex magnam tempora facilis! Est.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-chess-king  fa-2x"></i>
+                            <h6>Title</h6>
+                            <p class="tbody-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae odio quasi, aliquid excepturi quaerat pariatur alias esse magni nisi molestias accusamus ab maiores aut ex magnam tempora facilis! Est.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-chess-king fa-2x"></i>
+                            <h6>Title</h6>
+                            <p class="tbody-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae odio quasi, aliquid excepturi quaerat pariatur alias esse magni nisi molestias accusamus ab maiores aut ex magnam tempora facilis! Est.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-chess-king fa-2x"></i>
+                            <h6>Title</h6>
+                            <p class="tbody-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae odio quasi, aliquid excepturi quaerat pariatur alias esse magni nisi molestias accusamus ab maiores aut ex magnam tempora facilis! Est.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="AboutDB" class="tabcontent">
+            <div class="container">
+                <div class="img-wrapper">
+                    <div class="img-teacher" style="background-image: url('./images/teacher.png');"></div>
+                    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                    <div>
+                        <h4>William</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse quis, placeat tempore vel pariatur voluptates eius dolor consequatur sed ad atque provident cupiditate blanditiis beatae, assumenda, nam architecto praesentium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="AboutES" class="tabcontent" >
+            <div class="container">
+            </div>
+        </div>
+        <div id="AboutED" class="tabcontent">
+            <div class="container">
+
+            </div>
+        </div>
+        <div id="AboutWeb" class="tabcontent">
+            <div class="container">
+
+            </div>
+        </div>
+        <div id="AboutLog" class="tabcontent">
+            <div class="container">
+
+            </div>
+        </div>
+        <div id="AboutAgile" class="tabcontent">
+            <div class="container">
+
+            </div>
+        </div>
+        <div id="AboutCoach" class="tabcontent">
+            <div class="container">
+
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
