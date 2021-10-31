@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
     <script src="https://kit.fontawesome.com/6039d60b32.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>Nicolas Battisti</title>
 </head>
 <body>
@@ -27,8 +31,8 @@
         </div>
         
         
-    </header>
-    <div id="AboutMT" class="sub-menu">
+    </header> 
+    <div id="AboutMT" class="sub-menu"> <!-- Sub-Menu -->
         <div class="tab-container">
             <button class="nav-buttons" onclick="openMenuTab(event, 'AboutDB')">
                 <img src="" alt=""> Banco de dados
@@ -45,7 +49,7 @@
             </button>
         </div>
         <div class="tab-container" >
-            <button class="nav-buttons" onclick="openMenuTab(event, 'AboutWeb')">
+            <button class="nav-buttons active" onclick="openMenuTab(event, 'AboutWeb')">
                 <img src="" alt=""> Front-End
             </button>
         </div>
@@ -64,9 +68,9 @@
                 <img src="" alt=""> Softskills
             </button>
         </div>
-    </div>
-    <main>
-        <div id="About" class="tabcontent active">
+    </div> <!-- END Sub-menu -->
+    <main> <!-- Conteúdo da Página -->
+        <div id="About" class="tabcontent"> <!-- Sobre mim -->
             <div class="container">
                 <div class="self-img"></div>
                 <h3 style="margin-top: 8px;">Nicolas Battisti</h3>
@@ -118,8 +122,9 @@
                 </div>
             </div> 
             
-        </div>
-        <div id="AboutBPK" class="tabcontent">
+        </div> <!-- END Sobre mim -->
+        
+        <div id="AboutBPK" class="tabcontent"> <!--Sobre Connect-->
             <div class="container">
                 <div class="bpk-logo"></div>
                 <div class="about-text">
@@ -151,49 +156,336 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="AboutDB" class="tabcontent">
+        </div><!--END Sobre Connect-->
+        
+        <div id="AboutDB" class="tabcontent"> <!--Sobre Banco de Dados-->
             <div class="container">
-                <div class="img-wrapper">
+                <h5>Conteúdo</h5>
+                <div>  <!-- Sumary -->
+                    <ul class="sumary">
+                        <li><a href="#AboutTDB">Sobre o Professor</a></li>
+                        <li><a href="#SobreDB">Sobre a Matéria</a></li>
+                        <li><a href="#modeloConceitual">Modelo Conceitual</a></li>
+                        <li><a href="#DDL">Comandos DDL</a></li>
+                        <li><a href="#DML">Comandos DML</a></li>
+                    </ul>
+                </div>  <!-- END Sumary -->
+                
+                <div id="AboutTDB"class="img-wrapper" style="margin-top: 32px;"> <!-- About Teacher DB-->
                     <div class="img-teacher" style="background-image: url('./images/teacher.png');"></div>
                     <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
                     <div>
-                        <h4>William</h4>
+                        <h4 style="text-align: center;">William</h4>
                         <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse quis, placeat tempore vel pariatur voluptates eius dolor consequatur sed ad atque provident cupiditate blanditiis beatae, assumenda, nam architecto praesentium.</p>
+                    </div>
+                </div> <!-- About Teacher DB-->
+
+                <div class="about-text">
+                    <div id="SobreDB">
+                        <h4 style="text-align: center;">Sobre a Matéria</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat culpa laboriosam, voluptates assumenda ea fugit nemo suscipit! Libero, veritatis! Vero omnis voluptate minus asperiores adipisci quos voluptatibus tenetur vel dolorum!</p>
+                    </div>
+                    
+                    <div id="modeloConceitual">
+                        <h5 style="text-align: center;">Modelo Conceitual</h5>
+                        <p class="tbody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, obcaecati! Suscipit, veniam aperiam. Iusto deserunt aspernatur earum fugiat placeat qui quisquam ab commodi. Modi commodi inventore ipsa sint, similique voluptatum!</p>
+                    </div>
+                    <div id="DDL">
+                        <h5 style="text-align: center;">Comandos DDL</h5>
+                        <p class="tbody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium doloribus architecto consectetur distinctio, aliquid repellendus eveniet sapiente aliquam in provident iusto, nulla accusantium ratione facilis. Distinctio commodi qui magni consectetur.</p>
+                        <div class="example">
+                            <pre>
+                                <code class="sql">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div id="DML">
+                        <h5 style="text-align: center;">Comandos DML</h5>
+                        <p class="tbody">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, accusamus! Repellat numquam reiciendis omnis quo assumenda perferendis modi, eaque quisquam eligendi eveniet rerum quasi facere quam minus eius a sequi.</p>
+                        <div class="example">
+                            <pre>
+                                <code class="sql">
+                    
+                                </code>
+                            </pre>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="AboutES" class="tabcontent" >
+        </div> <!-- END Sobre Banco de Dados-->
+        
+        <div id="AboutES" class="tabcontent" > <!--Sobre Engenharia de Software -->
             <div class="container">
-            </div>
-        </div>
-        <div id="AboutED" class="tabcontent">
-            <div class="container">
+                <h5>Conteúdo</h5>
+                <div>  <!-- Sumary -->
+                    <ul class="sumary">
+                        <li><a href="#AboutTES">Sobre o Professor</a></li>
+                        <li><a href="#SobreES">Sobre a Matéria</a></li>
+                        <li><a href="#">Modelo Conceitual</a></li>
+                        <li><a href="#">Comandos DDL</a></li>
+                        <li><a href="#">Comandos DML</a></li>
+                    </ul>
+                </div>  <!-- END Sumary -->
+                
+                <div id="AboutTES"class="img-wrapper" style="margin-top: 32px;"> <!-- About Teacher DB-->
+                    <div class="img-teacher" style="background-image: url('./images/teacherw.png');"></div>
+                    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                    <div>
+                        <h4 style="text-align: center;">Daniele</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse quis, placeat tempore vel pariatur voluptates eius dolor consequatur sed ad atque provident cupiditate blanditiis beatae, assumenda, nam architecto praesentium.</p>
+                    </div>
+                </div> <!-- About Teacher DB-->
 
+                <div class="about-text">
+                    <div id="SobreES">
+                        <h4 style="text-align: center;">Sobre a Matéria</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat culpa laboriosam, voluptates assumenda ea fugit nemo suscipit! Libero, veritatis! Vero omnis voluptate minus asperiores adipisci quos voluptatibus tenetur vel dolorum!</p>
+                    </div>
+                    
+                    <div id="">
+                        <h5 style="text-align: center;">Modelo Conceitual</h5>
+                        <p class="tbody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, obcaecati! Suscipit, veniam aperiam. Iusto deserunt aspernatur earum fugiat placeat qui quisquam ab commodi. Modi commodi inventore ipsa sint, similique voluptatum!</p>
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DDL</h5>
+                        <p class="tbody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium doloribus architecto consectetur distinctio, aliquid repellendus eveniet sapiente aliquam in provident iusto, nulla accusantium ratione facilis. Distinctio commodi qui magni consectetur.</p>
+                        
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DML</h5>
+                        <p class="tbody">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, accusamus! Repellat numquam reiciendis omnis quo assumenda perferendis modi, eaque quisquam eligendi eveniet rerum quasi facere quam minus eius a sequi.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="AboutWeb" class="tabcontent">
+        </div> <!--END Sobre Engenharia de Software -->
+        
+        <div id="AboutED" class="tabcontent"> <!-- Sobre Estrutura de Dados-->
             <div class="container">
+                <h5>Conteúdo</h5>
+                <div>  <!-- Sumary -->
+                    <ul class="sumary">
+                        <li><a href="#">Sobre o Professor</a></li>
+                        <li><a href="#">Sobre a Matéria</a></li>
+                        <li><a href="#">Modelo Conceitual</a></li>
+                        <li><a href="#">Comandos DDL</a></li>
+                        <li><a href="#">Comandos DML</a></li>
+                    </ul>
+                </div>  <!-- END Sumary -->
+                
+                <div id=""class="img-wrapper" style="margin-top: 32px;"> <!-- About Teacher DB-->
+                    <div class="img-teacher" style="background-image: url('./images/teacherw.png');"></div>
+                    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                    <div>
+                        <h4 style="text-align: center;">Daniele</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse quis, placeat tempore vel pariatur voluptates eius dolor consequatur sed ad atque provident cupiditate blanditiis beatae, assumenda, nam architecto praesentium.</p>
+                    </div>
+                </div> <!-- About Teacher DB-->
 
+                <div class="about-text">
+                    <div id="">
+                        <h4 style="text-align: center;">Sobre a Matéria</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat culpa laboriosam, voluptates assumenda ea fugit nemo suscipit! Libero, veritatis! Vero omnis voluptate minus asperiores adipisci quos voluptatibus tenetur vel dolorum!</p>
+                    </div>
+                    
+                    <div id="">
+                        <h5 style="text-align: center;">Modelo Conceitual</h5>
+                        <p class="tbody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, obcaecati! Suscipit, veniam aperiam. Iusto deserunt aspernatur earum fugiat placeat qui quisquam ab commodi. Modi commodi inventore ipsa sint, similique voluptatum!</p>
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DDL</h5>
+                        <p class="tbody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium doloribus architecto consectetur distinctio, aliquid repellendus eveniet sapiente aliquam in provident iusto, nulla accusantium ratione facilis. Distinctio commodi qui magni consectetur.</p>
+                        
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DML</h5>
+                        <p class="tbody">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, accusamus! Repellat numquam reiciendis omnis quo assumenda perferendis modi, eaque quisquam eligendi eveniet rerum quasi facere quam minus eius a sequi.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="AboutLog" class="tabcontent">
+        </div>  <!-- END Sobre Estrutura de Dados-->
+        
+        <div id="AboutWeb" class="tabcontent"> <!-- Sobre Front-End-->
             <div class="container">
+                <h5>Conteúdo</h5>
+                <div>  <!-- Sumary -->
+                    <ul class="sumary">
+                        <li><a href="#">Sobre o Professor</a></li>
+                        <li><a href="#">Sobre a Matéria</a></li>
+                        <li><a href="#">Modelo Conceitual</a></li>
+                        <li><a href="#">Comandos DDL</a></li>
+                        <li><a href="#">Comandos DML</a></li>
+                    </ul>
+                </div>  <!-- END Sumary -->
+                
+                <div id=""class="img-wrapper" style="margin-top: 32px;"> <!-- About Teacher DB-->
+                    <div class="img-teacher" style="background-image: url('./images/teacherw.png');"></div>
+                    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                    <div>
+                        <h4 style="text-align: center;">Daniele</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse quis, placeat tempore vel pariatur voluptates eius dolor consequatur sed ad atque provident cupiditate blanditiis beatae, assumenda, nam architecto praesentium.</p>
+                    </div>
+                </div> <!-- About Teacher DB-->
 
+                <div class="about-text">
+                    <div id="">
+                        <h4 style="text-align: center;">Sobre a Matéria</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat culpa laboriosam, voluptates assumenda ea fugit nemo suscipit! Libero, veritatis! Vero omnis voluptate minus asperiores adipisci quos voluptatibus tenetur vel dolorum!</p>
+                    </div>
+                    
+                    <div id="">
+                        <h5 style="text-align: center;">Modelo Conceitual</h5>
+                        <p class="tbody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, obcaecati! Suscipit, veniam aperiam. Iusto deserunt aspernatur earum fugiat placeat qui quisquam ab commodi. Modi commodi inventore ipsa sint, similique voluptatum!</p>
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DDL</h5>
+                        <p class="tbody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium doloribus architecto consectetur distinctio, aliquid repellendus eveniet sapiente aliquam in provident iusto, nulla accusantium ratione facilis. Distinctio commodi qui magni consectetur.</p>
+                        
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DML</h5>
+                        <p class="tbody">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, accusamus! Repellat numquam reiciendis omnis quo assumenda perferendis modi, eaque quisquam eligendi eveniet rerum quasi facere quam minus eius a sequi.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="AboutAgile" class="tabcontent">
+        </div> <!-- END Sobre Front-End-->
+        
+        <div id="AboutLog" class="tabcontent"> <!-- Sobre Lógica e Algoritimo -->
             <div class="container">
+                <h5>Conteúdo</h5>
+                <div>  <!-- Sumary -->
+                    <ul class="sumary">
+                        <li><a href="#">Sobre o Professor</a></li>
+                        <li><a href="#">Sobre a Matéria</a></li>
+                        <li><a href="#">Modelo Conceitual</a></li>
+                        <li><a href="#">Comandos DDL</a></li>
+                        <li><a href="#">Comandos DML</a></li>
+                    </ul>
+                </div>  <!-- END Sumary -->
+                
+                <div id=""class="img-wrapper" style="margin-top: 32px;"> <!-- About Teacher DB-->
+                    <div class="img-teacher" style="background-image: url('./images/teacherw.png');"></div>
+                    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                    <div>
+                        <h4 style="text-align: center;">Daniele</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse quis, placeat tempore vel pariatur voluptates eius dolor consequatur sed ad atque provident cupiditate blanditiis beatae, assumenda, nam architecto praesentium.</p>
+                    </div>
+                </div> <!-- About Teacher DB-->
 
+                <div class="about-text">
+                    <div id="">
+                        <h4 style="text-align: center;">Sobre a Matéria</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat culpa laboriosam, voluptates assumenda ea fugit nemo suscipit! Libero, veritatis! Vero omnis voluptate minus asperiores adipisci quos voluptatibus tenetur vel dolorum!</p>
+                    </div>
+                    
+                    <div id="">
+                        <h5 style="text-align: center;">Modelo Conceitual</h5>
+                        <p class="tbody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, obcaecati! Suscipit, veniam aperiam. Iusto deserunt aspernatur earum fugiat placeat qui quisquam ab commodi. Modi commodi inventore ipsa sint, similique voluptatum!</p>
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DDL</h5>
+                        <p class="tbody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium doloribus architecto consectetur distinctio, aliquid repellendus eveniet sapiente aliquam in provident iusto, nulla accusantium ratione facilis. Distinctio commodi qui magni consectetur.</p>
+                        
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DML</h5>
+                        <p class="tbody">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, accusamus! Repellat numquam reiciendis omnis quo assumenda perferendis modi, eaque quisquam eligendi eveniet rerum quasi facere quam minus eius a sequi.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="AboutCoach" class="tabcontent">
+        </div> <!-- END Sobre Lógica e Algoritimo -->
+        
+        <div id="AboutAgile" class="tabcontent"> <!--Sobre Metodologias Ágeis-->
             <div class="container">
+                <h5>Conteúdo</h5>
+                <div>  <!-- Sumary -->
+                    <ul class="sumary">
+                        <li><a href="#">Sobre o Professor</a></li>
+                        <li><a href="#">Sobre a Matéria</a></li>
+                        <li><a href="#">Modelo Conceitual</a></li>
+                        <li><a href="#">Comandos DDL</a></li>
+                        <li><a href="#">Comandos DML</a></li>
+                    </ul>
+                </div>  <!-- END Sumary -->
+                
+                <div id=""class="img-wrapper" style="margin-top: 32px;"> <!-- About Teacher DB-->
+                    <div class="img-teacher" style="background-image: url('./images/teacherw.png');"></div>
+                    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                    <div>
+                        <h4 style="text-align: center;">Daniele</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse quis, placeat tempore vel pariatur voluptates eius dolor consequatur sed ad atque provident cupiditate blanditiis beatae, assumenda, nam architecto praesentium.</p>
+                    </div>
+                </div> <!-- About Teacher DB-->
 
+                <div class="about-text">
+                    <div id="">
+                        <h4 style="text-align: center;">Sobre a Matéria</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat culpa laboriosam, voluptates assumenda ea fugit nemo suscipit! Libero, veritatis! Vero omnis voluptate minus asperiores adipisci quos voluptatibus tenetur vel dolorum!</p>
+                    </div>
+                    
+                    <div id="">
+                        <h5 style="text-align: center;">Modelo Conceitual</h5>
+                        <p class="tbody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, obcaecati! Suscipit, veniam aperiam. Iusto deserunt aspernatur earum fugiat placeat qui quisquam ab commodi. Modi commodi inventore ipsa sint, similique voluptatum!</p>
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DDL</h5>
+                        <p class="tbody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium doloribus architecto consectetur distinctio, aliquid repellendus eveniet sapiente aliquam in provident iusto, nulla accusantium ratione facilis. Distinctio commodi qui magni consectetur.</p>
+                        
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DML</h5>
+                        <p class="tbody">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, accusamus! Repellat numquam reiciendis omnis quo assumenda perferendis modi, eaque quisquam eligendi eveniet rerum quasi facere quam minus eius a sequi.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </main>
+        </div>  <!--END Sobre Metodologias Ágeis-->
+        
+        <div id="AboutCoach" class="tabcontent"> <!--Sobre SoftSkills-->
+            <div class="container">
+                <h5>Conteúdo</h5>
+                <div>  <!-- Sumary -->
+                    <ul class="sumary">
+                        <li><a href="#">Sobre o Professor</a></li>
+                        <li><a href="#">Sobre a Matéria</a></li>
+                        <li><a href="#">Modelo Conceitual</a></li>
+                        <li><a href="#">Comandos DDL</a></li>
+                        <li><a href="#">Comandos DML</a></li>
+                    </ul>
+                </div>  <!-- END Sumary -->
+                
+                <div id=""class="img-wrapper" style="margin-top: 32px;"> <!-- About Teacher DB-->
+                    <div class="img-teacher" style="background-image: url('./images/teacherw.png');"></div>
+                    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                    <div>
+                        <h4 style="text-align: center;">Daniele</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse quis, placeat tempore vel pariatur voluptates eius dolor consequatur sed ad atque provident cupiditate blanditiis beatae, assumenda, nam architecto praesentium.</p>
+                    </div>
+                </div> <!-- About Teacher DB-->
+
+                <div class="about-text">
+                    <div id="">
+                        <h4 style="text-align: center;">Sobre a Matéria</h4>
+                        <p class="tbody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat culpa laboriosam, voluptates assumenda ea fugit nemo suscipit! Libero, veritatis! Vero omnis voluptate minus asperiores adipisci quos voluptatibus tenetur vel dolorum!</p>
+                    </div>
+                    
+                    <div id="">
+                        <h5 style="text-align: center;">Modelo Conceitual</h5>
+                        <p class="tbody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, obcaecati! Suscipit, veniam aperiam. Iusto deserunt aspernatur earum fugiat placeat qui quisquam ab commodi. Modi commodi inventore ipsa sint, similique voluptatum!</p>
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DDL</h5>
+                        <p class="tbody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium doloribus architecto consectetur distinctio, aliquid repellendus eveniet sapiente aliquam in provident iusto, nulla accusantium ratione facilis. Distinctio commodi qui magni consectetur.</p>
+                        
+                    </div>
+                    <div id="">
+                        <h5 style="text-align: center;">Comandos DML</h5>
+                        <p class="tbody">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, accusamus! Repellat numquam reiciendis omnis quo assumenda perferendis modi, eaque quisquam eligendi eveniet rerum quasi facere quam minus eius a sequi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>  <!-- END Sobre SoftSkills-->
+    </main><!-- END Conteúdo da Página -->
     
 </body>
 </html>

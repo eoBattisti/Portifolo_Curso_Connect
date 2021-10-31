@@ -169,13 +169,45 @@ header{
     display: flex;
     flex-direction: row;
     text-align: justify;
-    
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(16, 16, 16, .5),
+                -5px -5px 10px rgba(255, 255, 255, .5);
+    border-radius: 16px;
+    padding: 0 10px
 }
 
 .img-teacher{
     background-repeat: no-repeat;
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 350px;
     border-radius: 50%;
     background-position: center;
+}
+
+.sumary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 500px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.sumary li {
+    border: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 5px 5px 10px rgba(16, 16, 16, .5),
+                -5px -5px 10px rgba(255, 255, 255, .5);
+    border-left: 8px solid var(--gray);
+    margin: 8px;
+    padding: 6px;
+    width: 130px;
+    text-align: center;
+}
+
+.sumary li:hover{
+    border-left: 8px solid var(--red);
+}
+
+#SobreDB, #modeloConceitual, #DDL, #DMl {
+    margin-top: 16px;
 }
