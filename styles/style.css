@@ -9,6 +9,7 @@
 
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -120,6 +121,11 @@ header{
     text-align: justify;
     margin-top: 16px;
 }
+.about-text h4, .about-text h5 {
+    border-bottom: 1px solid var(--gray)
+
+}
+
 .self-img{
     background-image: url('../images/selfimg.jpg');
     background-repeat: no-repeat;
@@ -150,6 +156,7 @@ header{
     text-align: justify;
     background: var(--light);
     box-shadow:  0px 0px 20px 0px #bebebe,  -20px -20px 60px #ffffff;
+    justify-content: center;
     
 }
 
