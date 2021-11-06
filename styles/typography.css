@@ -1,9 +1,14 @@
 
-
+h1, h2, h3, h4, h5, h6, p,
+span, .subtitle, .subtitle-2,
+.caption, .overline, .tbody, .tbody-2 {
+    color: var(--font-color);
+}
 h1 {
     font-size: 96px;
     font-weight: 300;
     letter-spacing: -1.5px;
+    
 }
 
 h2{
@@ -78,4 +83,8 @@ button{
     font-weight: 400;
     letter-spacing: 1.5px;
 
+}
+
+.title{
+    color: var(--extra-color);
 }
