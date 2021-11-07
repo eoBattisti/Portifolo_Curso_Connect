@@ -15,7 +15,8 @@ function openTab(evt, tabName){
 
     tabContent = document.getElementsByClassName("tabcontent");
     for(i = 0; i <tabContent.length; i++){
-        tabContent[i].style.display = "none";
+            tabContent[i].style.display = "none";
+            
     }
 
     navButton = document.getElementsByClassName("nav-buttons");

@@ -256,7 +256,9 @@ button{
     --secondary-color: #525252;
     --extra-color: #EC625F;
 }
-
+.card p {
+    text-align: center;
+}
 .fa-moon {
     color: var(--extra-color);
 }
@@ -282,4 +284,13 @@ button{
     background-image: url(../images/selfimgblack.png);
     background-position: center;
     background-size: 400px 400px;
+}
+
+#AboutBPK .icon-container{
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 70px;
+    width: 400px;
+    color: var(--extra-color)
 }
